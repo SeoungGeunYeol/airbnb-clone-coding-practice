@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "==4.0.3"
+pillow = "*"
+django-countries = {extras = ["pyuca"], version = "*"}
+flake8 = "*"
+psycopg2-binary = "*"
+packages = "*"
+django-seed = "==0.2.2"
+black = "*"
+django-dotenv = "*"
+requests = "*"
+
+[dev-packages]
+flake8 = "*"
+black = "*"
+awsebcli = "*"
+pipenv-to-requirements = "*"
+
+[requires]
+python_version = "3.9"
+
+[pipenv]
+allow_prereleases = true
