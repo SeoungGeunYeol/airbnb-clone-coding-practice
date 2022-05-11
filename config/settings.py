@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [".elasticbeanstalk.com", ""]
+ALLOWED_HOSTS = [".elasticbeanstalk.com"]
 
 # Application definition
 DJANGO_APPS = [
