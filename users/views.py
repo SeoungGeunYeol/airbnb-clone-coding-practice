@@ -1,7 +1,6 @@
 import os
 from django.conf import settings
 import requests
-from django.utils import translation
 from django.http import HttpResponse
 from django.contrib.auth.views import PasswordChangeView
 from django.views.generic import FormView, DetailView, UpdateView
@@ -228,6 +227,7 @@ class UpdateProfileView(mixins.LoggedInOnlyView, SuccessMessageMixin, UpdateView
         "birthdate",
         "language",
         "currency",
+        "email_verified",
     )
 
     success_message = "Profile Updated"

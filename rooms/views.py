@@ -16,7 +16,7 @@ class Homeview(ListView):
     model = models.Room
     paginate_by = 12
     paginate_orphans = 5
-    ordering = "created"
+    ordering = "-created"
     context_object_name = "rooms"
 
 
